@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="shortcut icon" href="./icon/classicon.png" type="image/x-icon" />
     <title>CSE-51-Class-Scheduling</title>
   </head>
@@ -45,7 +47,6 @@
       </div>
       <div class="container">
         <!-- <h2 class="mb-5">Class-Schedule</h2> -->
-
         <!-- ok -->
         <div class="table-responsive">
           <table class="table table-striped custom-table">
@@ -73,7 +74,9 @@
                 </td>
                 <td>10.30AM-12PM</td>
                 <td>Naznin Islam</td>
-                <td><a href="#" class="more">Details</a></td>
+                <td>
+                  <a href="#" class="more" id="cs313">Details</a>
+                </td>
               </tr>
 
               <tr>
@@ -87,7 +90,7 @@
                 </td>
                 <td>N/A</td>
                 <td>N/A</td>
-                <td><a href="#" class="more">Details</a></td>
+                <td><a href="#" class="more" id="cs317">Details</a></td>
               </tr>
               <tr>
                 <td>CSE 318</td>
@@ -135,7 +138,48 @@
       </div>
     </div>
 
+    <footer>
+      <footer>
+        <div class="wrapper-footer">
+          <p>
+            ©
+            <a href="https://web.facebook.com/Durjoy.Acharya/">
+              Durjoy Acharya</a
+            >
+            <span id="footer-copyright">2019 - 2022 </span> |
+            <a href="https://github.com/DurjoyAcharya">Github</a> |
+            <a href="mailto:da-durjoy@outlook.com"> Mail</a>
+          </p>
+        </div>
+      </footer>
+    </footer>
+    <style>
+      .wrapper-footer {
+        margin-top: 50px;
+        border-top: 1px solid darkslategrey;
+        border-bottom: 1px solid darkslategrey;
+        background-color: #141114;
+      }
+
+      footer {
+        padding: 10px 0 0 0;
+        text-align: center;
+      }
+
+      #footer-links {
+        margin: 0 0 30px 0;
+      }
+
+      #social-links a {
+        margin: 0 5px;
+      }
+
+      #footer-copyright {
+        margin: 20px 0 0 0;
+      }
+    </style>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
